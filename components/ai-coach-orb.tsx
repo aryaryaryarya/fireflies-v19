@@ -21,7 +21,7 @@ interface AICoachOrbProps {
   isActive?: boolean
 }
 
-export function AICoachOrb({ size = 600, particleCount = 2000, isActive = true }: AICoachOrbProps) {
+export function AICoachOrb({ size = 200, particleCount = 900, isActive = true }: AICoachOrbProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const particlesRef = useRef<Particle[]>([])
   const animationFrameRef = useRef<number>()
